@@ -1,0 +1,13 @@
+server:
+  port: 8880
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        bootstrap: true
+#        git:
+#          uri: file:///Users/shivakumar/Documents/personal_projects/springboot_projects/ConfigServer/src/main/resources/config/ConfigServer
+        native:
+          searchLocations: /Users/shivakumar/Documents/personal_projects/springboot_projects/ConfigServer/src/main/resources/config/ConfigServer
